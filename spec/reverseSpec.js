@@ -16,4 +16,8 @@ fdescribe("Reverse", () => {
   it("returns reversed version of array of length 3", () => {
     expect(reverse([1, 2, 3])).toEqual([3, 2, 1]);
   });
+
+  it("returns reversed version of array of letters", () => {
+    expect(reverse(["a", "b", "c"])).toEqual(["c", "b", "a"]);
+  });
 });

@@ -1,5 +1,3 @@
-const array = [1, 2];
-
 function reverse(array) {
   if (array.length <= 1) {
     return array;
