@@ -1,5 +1,7 @@
+const shuffle = require("./src/shuffle");
+
 let newArr = [];
-for (let i = 0; i <= 10000000; i++) {
+for (let i = 0; i <= 100000; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
 
@@ -24,13 +26,18 @@ console.log("starting timer...");
 // newArr.slice(-1);
 
 // reverse array
-newArr.reverse();
+// newArr.reverse();
 
 // shuffle array
 // shuffleArray(newArr);
 
 // sort array
 // newArr.sort();
+
+// My custom functions
+
+// Shuffle
+shuffle(newArr);
 
 // time elapsed
 const millis = Date.now() - start;
