@@ -1,0 +1,22 @@
+{
+  "name": "algorithm-complexity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "standard-functions.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danroche10/algorithm-complexity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danroche10/algorithm-complexity/issues"
+  },
+  "homepage": "https://github.com/danroche10/algorithm-complexity#readme",
+  "devDependencies": {
+    "jasmine": "^3.10.0"
+  }
+}
