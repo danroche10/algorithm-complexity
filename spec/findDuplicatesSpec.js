@@ -1,6 +1,6 @@
 const findDuplicates = require("../src/findDuplicates");
 
-describe("findDuplicates", () => {
+fdescribe("findDuplicates", () => {
   it("returns empty array when passed an empty array", () => {
     expect(findDuplicates([])).toEqual([]);
   });
@@ -17,7 +17,15 @@ describe("findDuplicates", () => {
     expect(findDuplicates(["dan", "text", "dan"])).toEqual(["dan"]);
   });
 
-  it("returns array of duplicates for multiple words duplicatd", () => {
+  it("returns array of duplicates for multiple elements duplicatd", () => {
     expect(findDuplicates([1, 2, 1, 3, 4, 3, 5])).toEqual([1, 3]);
+  });
+
+  it("returns array of duplicates when element is duplicated 3 times", () => {
+    expect(findDuplicates([1, 2, 1, 3, 1, 3, 5])).toEqual([1, 3]);
+  });
+
+  it("returns array of duplicates when one element is duplicated 5 times", () => {
+    expect(findDuplicates([1, 1, 1, 1, 1])).toEqual([1]);
   });
 });
