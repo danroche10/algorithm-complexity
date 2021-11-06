@@ -1,6 +1,6 @@
 const reverse = require("../src/reverse");
 
-fdescribe("Reverse", () => {
+describe("Reverse", () => {
   it("returns empty array when passed in empty array", () => {
     expect(reverse([])).toEqual([]);
   });
