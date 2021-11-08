@@ -1,6 +1,6 @@
 const findDuplicates = require("../src/findDuplicates");
 
-fdescribe("findDuplicates", () => {
+describe("findDuplicates", () => {
   it("returns empty array when passed an empty array", () => {
     expect(findDuplicates([])).toEqual([]);
   });

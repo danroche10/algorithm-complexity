@@ -3,10 +3,9 @@ const reverse = require("./src/reverse");
 const findDuplicates = require("./src/findDuplicates");
 
 let newArr = [];
-for (let i = 0; i <= 100; i++) {
+for (let i = 0; i <= 50000; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
-console.log(newArr);
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
 // function shuffleArray(array) {
