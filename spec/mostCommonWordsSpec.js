@@ -17,10 +17,16 @@ describe("mostCommonWords", () => {
     expect(mostCommonWords(["dan", "test", "dan"])).toEqual(["dan", "test"]);
   });
 
-  it("returns correct array when passed array of length give containing three different words", () => {
+  it("returns correct array when passed array of length 5 give containing three different words", () => {
     expect(mostCommonWords(["dan", "test", "dan", "test", "word"])).toEqual([
       "dan",
       "test",
     ]);
+  });
+
+  it("returns correct array when passed array of length 7 give containing three different words and two words appearing twice", () => {
+    expect(
+      mostCommonWords(["dan", "test", "dan", "test", "grind", "grind", "dan"])
+    ).toEqual(["dan", "grind"]);
   });
 });

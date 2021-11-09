@@ -1,9 +1,10 @@
 const shuffle = require("./src/shuffle");
 const reverse = require("./src/reverse");
 const findDuplicates = require("./src/findDuplicates");
+const mostCommonWords = require("./src/mostCommonWords");
 
 let newArr = [];
-for (let i = 0; i <= 50000; i++) {
+for (let i = 0; i <= 2000000; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
 
@@ -45,7 +46,10 @@ console.log("starting timer...");
 // reverse(newArr);
 
 // findDuplicates
-findDuplicates(newArr);
+// findDuplicates(newArr);
+
+// find two most common words
+mostCommonWords(newArr);
 
 // time elapsed
 const millis = Date.now() - start;
