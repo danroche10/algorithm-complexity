@@ -21,7 +21,7 @@ describe("sort", () => {
     expect(sort([0, 0, 0, 0, 0])).toEqual([0, 0, 0, 0, 0]);
   });
 
-  fit("returns correct array when given all 1s", () => {
+  it("returns correct array when given all 1s", () => {
     expect(sort([1, 1, 1, 1, 1])).toEqual([1, 1, 1, 1, 1]);
   });
 });
