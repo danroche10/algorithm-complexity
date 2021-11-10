@@ -17,7 +17,7 @@ describe("fullSort", () => {
     expect(fullSort([3, 2, 1])).toEqual([1, 2, 3]);
   });
 
-  fit("returns sorted array when passed an array of length 5", () => {
+  it("returns sorted array when passed an array of length 5", () => {
     expect(fullSort([3, 2, 1, 5, 4])).toEqual([1, 2, 3, 4, 5]);
   });
 });
