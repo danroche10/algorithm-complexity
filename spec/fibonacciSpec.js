@@ -1,6 +1,6 @@
 const fibonacci = require("../src/fibonacci");
 
-fdescribe("fibonacci", () => {
+describe("fibonacci", () => {
   it("returns empty array when passed 0", () => {
     expect(fibonacci(0)).toEqual([]);
   });

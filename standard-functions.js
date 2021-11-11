@@ -4,9 +4,11 @@ const findDuplicates = require("./src/findDuplicates");
 const mostCommonWords = require("./src/mostCommonWords");
 const sort = require("./src/sorting");
 const fullSort = require("./src/fullSort");
+const fibonacci = require("./src/fibonacci");
+const mechaCoachPairing = require("./src/mechaCoachPairing");
 
 let newArr = [];
-for (let i = 0; i <= 100000; i++) {
+for (let i = 0; i <= 10000; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
 
@@ -57,7 +59,13 @@ console.log("starting timer...");
 // sort(newArr);
 
 // sort array
-fullSort(newArr);
+// fullSort(newArr);
+
+// fibonacci sequence
+// fibonacci(2000000);
+
+// mechaCoachPairing
+mechaCoachPairing(newArr);
 
 // time elapsed
 const millis = Date.now() - start;
