@@ -1,6 +1,6 @@
 const mechaCoachPairing = require("../src/mechaCoachPairing");
 
-fdescribe("mechaCoachPairing", () => {
+describe("mechaCoachPairing", () => {
   it("returns empty array when receives empty array", () => {
     expect(mechaCoachPairing([])).toEqual([]);
   });

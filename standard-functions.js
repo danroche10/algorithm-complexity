@@ -6,9 +6,10 @@ const sort = require("./src/sorting");
 const fullSort = require("./src/fullSort");
 const fibonacci = require("./src/fibonacci");
 const mechaCoachPairing = require("./src/mechaCoachPairing");
+const subSequenceSum = require("./src/subSequenceSum");
 
 let newArr = [];
-for (let i = 0; i <= 10000; i++) {
+for (let i = 0; i <= 100; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
 
@@ -65,7 +66,10 @@ console.log("starting timer...");
 // fibonacci(2000000);
 
 // mechaCoachPairing
-mechaCoachPairing(newArr);
+// mechaCoachPairing(newArr);
+
+// subSequenceSum
+subSequenceSum(newArr, 100);
 
 // time elapsed
 const millis = Date.now() - start;
