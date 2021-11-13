@@ -1,4 +1,4 @@
-const fullSort = require("../src/fullSort");
+const fullSort = require("../src/initial-custom-functions/fullSort");
 
 describe("fullSort", () => {
   it("returns empty array when passed an empty array", () => {

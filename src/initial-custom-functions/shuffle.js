@@ -7,7 +7,7 @@ function shuffle(array) {
     const test = array.splice(random, 1);
     shuffledArray.push(test);
   }
-  console.log(shuffledArray.flat());
+  return shuffledArray.flat();
 }
 
 module.exports = shuffle;

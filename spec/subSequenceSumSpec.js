@@ -1,6 +1,6 @@
-const subSequenceSum = require("../src/subSequenceSum");
+const subSequenceSum = require("../src/initial-custom-functions/subSequenceSum");
 
-fdescribe("subSequenceSum", () => {
+describe("subSequenceSum", () => {
   it("returns true when array contains only the target number", () => {
     expect(subSequenceSum([1], 1)).toEqual(true);
   });

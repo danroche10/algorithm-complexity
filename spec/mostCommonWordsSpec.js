@@ -1,4 +1,4 @@
-const mostCommonWords = require("../src/mostCommonWords");
+const mostCommonWords = require("../src/initial-custom-functions/mostCommonWords");
 
 describe("mostCommonWords", () => {
   it("returns empty array when passed empty array", () => {

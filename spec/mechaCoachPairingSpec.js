@@ -1,4 +1,4 @@
-const mechaCoachPairing = require("../src/mechaCoachPairing");
+const mechaCoachPairing = require("../src/initial-custom-functions/mechaCoachPairing");
 
 describe("mechaCoachPairing", () => {
   it("returns empty array when receives empty array", () => {

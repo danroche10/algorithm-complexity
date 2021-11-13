@@ -1,4 +1,4 @@
-const shuffle = require("../src/shuffle");
+const shuffle = require("../src/initial-custom-functions/shuffle");
 
 describe("Shuffle", () => {
   const array = [1, 3, 5];
@@ -7,6 +7,6 @@ describe("Shuffle", () => {
   });
 
   it("correctly shuffles array", () => {
-    expect(shuffle(array)).toEqual(array);
+    expect(shuffle(array).length).toEqual(3);
   });
 });

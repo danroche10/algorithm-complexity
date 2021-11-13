@@ -1,4 +1,4 @@
-const fibonacci = require("../src/fibonacci");
+const fibonacci = require("../src/initial-custom-functions/fibonacci");
 
 describe("fibonacci", () => {
   it("returns empty array when passed 0", () => {

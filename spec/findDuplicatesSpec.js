@@ -1,11 +1,10 @@
-const findDuplicates = require("../src/findDuplicates");
+const findDuplicates = require("../src/initial-custom-functions/findDuplicates");
 
 describe("findDuplicates", () => {
   it("returns empty array when passed an empty array", () => {
     expect(findDuplicates([])).toEqual([]);
   });
   it("returns empty array when passed an array of length 1 with no duplicates", () => {
-    console.log(findDuplicates(["dan"]));
     expect(findDuplicates(["dan"])).toEqual([]);
   });
 

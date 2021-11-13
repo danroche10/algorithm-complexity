@@ -1,4 +1,4 @@
-const sort = require("../src/sorting");
+const sort = require("../src/initial-custom-functions/sorting");
 
 describe("sort", () => {
   it("returns empty array when passed an empty array", () => {

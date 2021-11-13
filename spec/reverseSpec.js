@@ -1,4 +1,4 @@
-const reverse = require("../src/reverse");
+const reverse = require("../src/initial-custom-functions/reverse");
 
 describe("Reverse", () => {
   it("returns empty array when passed in empty array", () => {
