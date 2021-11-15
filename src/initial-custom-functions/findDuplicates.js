@@ -9,12 +9,7 @@ function findDuplicates(array) {
       array.splice(i, 1);
     }
   }
-  for (let i = array.length - 1; i >= 0; i--) {
-    if (array.slice(0, i).includes(array[i])) {
-      array.splice(i, 1);
-    }
-  }
-  return array;
+  return array.filter((v, i, a) => a.indexOf(v) === i);
 }
 
 module.exports = findDuplicates;

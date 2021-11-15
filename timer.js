@@ -1,6 +1,7 @@
 const shuffle = require("./src/initial-custom-functions/shuffle");
 const reverse = require("./src/initial-custom-functions/reverse");
 const findDuplicates = require("./src/initial-custom-functions/findDuplicates");
+const secondFindDuplicates = require("./src/improved-custom-functions/secondFindDuplicates");
 const mostCommonWords = require("./src/initial-custom-functions/mostCommonWords");
 const sort = require("./src/initial-custom-functions/sorting");
 const fullSort = require("./src/initial-custom-functions/fullSort");
@@ -9,7 +10,7 @@ const mechaCoachPairing = require("./src/initial-custom-functions/mechaCoachPair
 const subSequenceSum = require("./src/initial-custom-functions/subSequenceSum");
 
 let newArr = [];
-for (let i = 0; i <= 95000; i++) {
+for (let i = 0; i <= 2000000; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
 
@@ -50,7 +51,8 @@ console.log("starting timer...");
 // reverse(newArr);
 
 // findDuplicates
-// findDuplicates(newArr);
+//findDuplicates(newArr);
+secondFindDuplicates(newArr);
 
 // find two most common words
 // mostCommonWords(newArr);
@@ -68,7 +70,7 @@ console.log("starting timer...");
 // mechaCoachPairing(newArr);
 
 // subSequenceSum
-subSequenceSum(newArr, 1000000000);
+// subSequenceSum(newArr, 1000000000);
 
 // time elapsed
 const millis = Date.now() - start;
