@@ -2,8 +2,9 @@
   "name": "algorithm-complexity",
   "version": "1.0.0",
   "description": "",
-  "main": "standard-functions.js",
+  "main": "timer.js",
   "scripts": {
+    "start": "node timer.js",
     "test": "jasmine"
   },
   "repository": {
