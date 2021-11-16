@@ -11,7 +11,7 @@ const mechaCoachPairing = require("./src/initial-custom-functions/mechaCoachPair
 const subSequenceSum = require("./src/initial-custom-functions/subSequenceSum");
 
 let newArr = [];
-for (let i = 0; i <= 1500000; i++) {
+for (let i = 0; i <= 2000000; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
 
@@ -53,7 +53,7 @@ console.log("starting timer...");
 
 // findDuplicates
 //findDuplicates(newArr);
-// secondFindDuplicates(newArr);
+secondFindDuplicates(newArr);
 
 // find two most common words
 // mostCommonWords(newArr);
@@ -65,7 +65,7 @@ console.log("starting timer...");
 // fullSort(newArr);
 
 // fibonacci sequence
-fibonacci(newArr.length);
+// fibonacci(newArr.length);
 // secondFibonacci(newArr.length);
 
 // mechaCoachPairing

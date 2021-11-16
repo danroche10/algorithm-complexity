@@ -30,7 +30,7 @@ describe("findDuplicates", () => {
   });
 });
 
-describe("secondFindDuplicates", () => {
+fdescribe("secondFindDuplicates", () => {
   it("returns empty array when passed an empty array", () => {
     expect(secondFindDuplicates([])).toEqual([]);
   });

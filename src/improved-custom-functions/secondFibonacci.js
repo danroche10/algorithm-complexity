@@ -1,3 +1,4 @@
+// update to recursive version
 function secondFibonacci(number) {
   if (number === 0) {
     return [];
