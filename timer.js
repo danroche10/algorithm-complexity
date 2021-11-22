@@ -6,12 +6,15 @@ const mostCommonWords = require("./src/initial-custom-functions/mostCommonWords"
 const sort = require("./src/initial-custom-functions/sorting");
 const fullSort = require("./src/initial-custom-functions/fullSort");
 const fibonacci = require("./src/initial-custom-functions/fibonacci");
-const secondFibonacci = require("./src/improved-custom-functions/secondFibonacci");
+const {
+  secondFibonacci,
+  thirdFibonacci,
+} = require("./src/improved-custom-functions/secondFibonacci");
 const mechaCoachPairing = require("./src/initial-custom-functions/mechaCoachPairing");
 const subSequenceSum = require("./src/initial-custom-functions/subSequenceSum");
 
 let newArr = [];
-for (let i = 0; i <= 2000000; i++) {
+for (let i = 0; i <= 100000; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
 
@@ -53,7 +56,7 @@ console.log("starting timer...");
 
 // findDuplicates
 //findDuplicates(newArr);
-secondFindDuplicates(newArr);
+// secondFindDuplicates(newArr);
 
 // find two most common words
 // mostCommonWords(newArr);
@@ -67,6 +70,7 @@ secondFindDuplicates(newArr);
 // fibonacci sequence
 // fibonacci(newArr.length);
 // secondFibonacci(newArr.length);
+thirdFibonacci(1000);
 
 // mechaCoachPairing
 // mechaCoachPairing(newArr);

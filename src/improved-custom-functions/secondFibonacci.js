@@ -12,7 +12,7 @@ function secondFibonacci(number) {
   return fibNumbers;
 }
 
-// calling itself recursively
+// calling itself recursively ( will exceed callstack for large numbers)
 function thirdFibonacci(number) {
   {
     if (number === 0) {
