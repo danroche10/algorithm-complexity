@@ -1,4 +1,3 @@
-// update to recursive version
 function secondFibonacci(number) {
   if (number === 0) {
     return [];
@@ -13,4 +12,19 @@ function secondFibonacci(number) {
   return fibNumbers;
 }
 
-module.exports = secondFibonacci;
+// calling itself recursively
+function thirdFibonacci(number) {
+  {
+    if (number === 0) {
+      return [0];
+    } else if (number === 1) {
+      return [0, 1];
+    } else {
+      const s = thirdFibonacci(number - 1);
+      s.push(s[s.length - 1] + s[s.length - 2]);
+      return s;
+    }
+  }
+}
+
+module.exports = { secondFibonacci, thirdFibonacci };

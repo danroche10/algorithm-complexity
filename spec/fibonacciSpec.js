@@ -1,5 +1,8 @@
 const fibonacci = require("../src/initial-custom-functions/fibonacci");
-const secondFibonacci = require("../src/improved-custom-functions/secondFibonacci");
+const {
+  secondFibonacci,
+  thirdFibonacci,
+} = require("../src/improved-custom-functions/secondFibonacci");
 
 describe("fibonacci", () => {
   it("returns empty array when passed 0", () => {
@@ -35,5 +38,23 @@ describe("secondFibonacci", () => {
   });
   it("returns correct array when passed 10", () => {
     expect(secondFibonacci(10)).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
+  });
+});
+
+describe("thirdFibonacci", () => {
+  it("returns correct array when passed 0", () => {
+    expect(thirdFibonacci(0)).toEqual([0]);
+  });
+  it("returns correct array when passed 1", () => {
+    expect(thirdFibonacci(1)).toEqual([0, 1]);
+  });
+  it("returns correct array when passed 2", () => {
+    expect(thirdFibonacci(2)).toEqual([0, 1, 1]);
+  });
+  it("returns correct array when passed 3", () => {
+    expect(thirdFibonacci(3)).toEqual([0, 1, 1, 2]);
+  });
+  it("returns correct array when passed 10", () => {
+    expect(thirdFibonacci(10)).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]);
   });
 });
