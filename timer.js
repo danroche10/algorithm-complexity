@@ -4,7 +4,7 @@ const findDuplicates = require("./src/initial-custom-functions/findDuplicates");
 const secondFindDuplicates = require("./src/improved-custom-functions/secondFindDuplicates");
 const mostCommonWords = require("./src/initial-custom-functions/mostCommonWords");
 const sort = require("./src/initial-custom-functions/sorting");
-const fullSort = require("./src/initial-custom-functions/fullSort");
+const insertionSort = require("./src/initial-custom-functions/fullSort");
 const fibonacci = require("./src/initial-custom-functions/fibonacci");
 const {
   secondFibonacci,
@@ -14,7 +14,7 @@ const mechaCoachPairing = require("./src/initial-custom-functions/mechaCoachPair
 const subSequenceSum = require("./src/initial-custom-functions/subSequenceSum");
 
 let newArr = [];
-for (let i = 0; i <= 100000; i++) {
+for (let i = 0; i <= 10000; i++) {
   newArr.push(Math.floor(Math.random() * 100));
 }
 
@@ -65,12 +65,12 @@ console.log("starting timer...");
 // sort(newArr);
 
 // sort array
-// fullSort(newArr);
+// insertionSort(newArr);
 
 // fibonacci sequence
 // fibonacci(newArr.length);
 // secondFibonacci(newArr.length);
-thirdFibonacci(1000);
+thirdFibonacci(newArr.length);
 
 // mechaCoachPairing
 // mechaCoachPairing(newArr);

@@ -1,4 +1,4 @@
-function fullSort(array) {
+function insertionSort(array) {
   if (array.length <= 1) {
     return array;
   } else {
@@ -15,4 +15,8 @@ function fullSort(array) {
   }
 }
 
-module.exports = fullSort;
+// selection sort
+// merge sort
+// quick sort
+
+module.exports = insertionSort;
