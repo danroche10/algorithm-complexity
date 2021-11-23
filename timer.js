@@ -70,7 +70,7 @@ console.log("starting timer...");
 // fibonacci sequence
 // fibonacci(newArr.length);
 // secondFibonacci(newArr.length);
-thirdFibonacci(newArr.length);
+// thirdFibonacci(newArr.length);
 
 // mechaCoachPairing
 // mechaCoachPairing(newArr);
